@@ -6,10 +6,10 @@ services:
     ports:
       - "3000"
     volumes:
-      - whatsapp:/app/storages
+      - whatsapp_storages:/app/storages
     environment:
       - APP_PORT=3000
       - APP_ACCOUNT_VALIDATION=false
 
 volumes:
-  whatsapp:
+  whatsapp_storages:
